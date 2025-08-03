@@ -45,6 +45,29 @@ Logs everything to:
 
 ---
 
+### for geo_lookup.py
 
+```bash
+python3 geo_lookup.py
+> Enter IP to lookup: 8.8.8.8
+```
+
+###  Output Log: `logs/geo_results.txt`
+
+```
+=== IP Lookup: 8.8.8.8 | 2025-08-03T14:31:15.951Z UTC ===
+IP Address   : 8.8.8.8
+Country      : United States
+Region       : California
+City         : Mountain View
+ZIP          : 94043
+Lat/Lon      : 37.4056, -122.0775
+ISP          : Google LLC
+Org          : Google Public DNS
+Timezone     : America/Los_Angeles
+------------------------------------------------------------
+```
+
+---
 
 
