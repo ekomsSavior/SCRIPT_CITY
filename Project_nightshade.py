@@ -309,7 +309,7 @@ def main():
     ╔══════════════════════════════════════════════════════════╗
     ║                   PROJECT NIGHTSHADE                     ║
     ║                 Advanced Excel Dropper                   ║
-    ║                   OPSEC Grade: Midnight                  ║
+    ║                   by : ek0ms savi0r                  ║
     ╚══════════════════════════════════════════════════════════╝
     ''')
     
