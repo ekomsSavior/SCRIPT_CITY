@@ -1,3 +1,5 @@
+**❤ FOR AUTHORIZED TESTING ONLY ❤**
+
 ### For eva_scan.ps1:
 
 logs all output to:
